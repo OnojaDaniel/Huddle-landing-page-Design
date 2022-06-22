@@ -1,152 +1,354 @@
-* {
-    box-sizing: border-box;
+body {
+    font-size: 18px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
+#hero {
+    background: url(images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    padding: 4rem;
 }
 
-[class*="col-"] {
-    float: left;
-    padding: 30px;
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
-html {
-    font-family: 'Poppins', sans-serif;
+.logo {
+    height: 10%;
 }
-h1 {
-    color: black;
-    margin-top: 10%;
+
+.nav-flex .nav-btn {
+    padding: 1rem 4rem;
+    background: #fff;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 4px 2px 4px 2px rgba(128, 128, 128, 0.363);
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 50px;
-}
-input {
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    height: 38px;
-    border-radius: 5px;
-    border-width: thin;
-    border-color: hsl(246, 25%, 77%);
-    margin-top: 2vw;
-}
-button {
-
 }
 
-button.outer{
-    background: hsl(322, 100%, 66%);
-    border-radius: 20px;
-    width: 50%;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 4%;
-    height: 50px;
-    border-width: 0px;
-    color: white;
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.479);
 }
-.btn-header {
-    font-family: 'Poppins', sans-serif;
-    float:right;
-    height: 40px;
-    border-width: 0px;
-    width: 15vw;
-    margin-right: 5%;
-    margin-top: 2%;
-    border-radius: 20px;
-    background: white;
-    box-shadow: -2px 12px 10px 1px rgba(214, 214, 219, 0.43);
+
+@media (max-width: 720px) {
+
+    #hero {
+        padding: 2rem;
+    }
+    .nav-flex .nav-btn {
+        padding: 0.6rem 2rem;
+    }
+
+    .logo {
+        height: 5%;
+        width: 40%;
+    }
 }
-p {
-    color: black;
-    font-size: 16px;
-}
-h2{
-    margin-top: 7vw;
-}
+
+/* Hero */
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem auto;
+}
+
+.item {
+    flex: 50%;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    width: 80%;
+}
+
+.sub-heading {
+    font-weight: 400;
+    line-height: 1.5;
+    width: 90%;
+}
+
+.hero-btn {
+    padding: 1.2rem 4rem;
+    margin: 1rem auto;
+    background: hsl(322, 100%, 66%);
+    border-radius: 30px;
+    border: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.hero-btn:hover {
+    background: hsla(322, 100%, 66%, 0.644);
+}
+
+.hero-btn:active {
+    background: hsla(322, 100%, 66%, 0.644);
+}
+
+.banner-img {
     width: 100%;
-   padding: 45vw;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #f8f8ff;
-    border-radius:5px;
 }
-.container.container-fluid {
-    position: relative;
-    z-index: 1;
+
+@media (max-width: 970px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        padding: 1rem;
+        flex: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .heading {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .sub-heading {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+
+    }
 }
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 900px;
+
+
+
+/* Middle Section */
+
+#middle {
+    margin: 10% auto;
+}
+
+.flex-container {
+    margin: 3% 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 3px rgba(128, 128, 128, 0.089);
+}
+
+.flex-container .flex-item {
+    flex: 40%;
+    padding: 3rem;
+}
+
+.flex-item .flex-head {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.flex-item .flex-sub {
+    line-height: 1.5;
+}
+
+.rev-row {
+    flex-direction: row-reverse;
+}
+
+
+.flex-item img {
+    width: 100%;
+}
+
+@media (max-width: 790px) {
+    .flex-container {
+        margin: 5% 7%;
+        flex-direction: column-reverse;
+    }
+
+    .flex-container .flex-item {
+        flex: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #middle {
+        margin: 10% auto 40% auto;
+    }
+}
+
+/* Foot */
+
+.lflex {
+    box-sizing: border-box;
+    background: #fff;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+    position: absolute;
+    top: -40%;
+    left: 25%;
+    transform: translate(-50, -50);
+}
+
+.lflex .heading {
+    width: auto;
     text-align: center;
 }
-.box-shadow {
-    margin-top: 50px;
-    background-color: rgba(255, 255, 255, 0.61);
-    color: black;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 12px 3px #eae8e8;
+
+.fbtn {
+    margin: 0;
+}
+
+#footer {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 25%;
+    background: hsl(192, 100%, 9%);
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-}
-header {
-    background-color: hsl(193, 100%, 96%);
-    background-image: url("images/bg-hero-desktop.svg");
-}
-.logo{
-    margin-top: 2%;
-    width: 23vw;
+    padding: 10rem;
 }
 
-
-.aside {
-    margin-top: 10%;
-    width: 45vw;
-    align-content: center;
-
+.foot-item {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-align: left;
 }
 
-.aside-img{
-    width: 100%;
-    margin-right: 45px;
-}
-.first-img {
-    width: 100%;
-
+.pclog {
+    width: 60%;
+    padding-bottom: 2.5rem;
 }
 
-
-
-/* For desktop: */
-
-.col-3 {width: 40%;}
-
-.col-6 {width: 50%;}
-
-
-
-
-body {
-    background: hsl(0, 100%, 74%);
+.lf {
+    width: 40%;
+    color: #fff;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 1440px) {
-    body {
-        background-color: hsl(0, 0%, 100%);
+.lf span {
+    display: block;
+    margin: 0.5rem 0;
+}
 
+.lf i {
+    margin-right: 5px;
+}
+
+.foot-item a {
+    margin: 0.5rem 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bloc {
+    display: inline-block;
+    color: #fff;
+}
+
+.bloc i {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+
+@media (max-width: 880px) {
+
+    #footer {
+        flex-direction: column;
+        padding-left: 2rem;
     }
-}
 
-/* On screens that are 600px or less, set the background color to olive */
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
+    .foot-item {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .lf {
         width: 100%;
+        color: #fff;
     }
-    body {
-        background-color: hsl(0, 21%, 22%);
-        background-image: url("images/bg-intro-desktop.png");
+
+    .pclog {
+        width: 80%;
     }
+
+    .lflex {
+        background: #fff;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        padding: 2rem;
+        position: absolute;
+        top: -25%;
+        left: 10%;
+        transform: translate(-50, -50);
+    }
+
+    .lflex .heading {
+        font-size: 2rem;
+    }
+
+    .bloc {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 660px) {
+    .lflex {
+        background: #fff;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        padding: 1rem;
+        position: absolute;
+        top: -15%;
+        left: 10%;
+        transform: translate(-50, -50);
+    }
+
+    .lflex .heading {
+        font-size: 2rem;
+    }
+
+    .fbtn {
+        margin: 0.5rem;
+        padding: 1rem 3rem;
+    }
+}
+.copy{
+    vertical-align: bottom;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    color: #fff;
+    align-items: center;
 }

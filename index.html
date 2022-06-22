@@ -1,52 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="icon"  type="image/png"  href="images/favicon-32x32.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="shortcut icon"
+            href="images/favicon-32x32.png"
+            type="image/x-icon"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+    />
+
+    <title>Huddle Page</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
+            rel="stylesheet"
+    />
 </head>
 <body>
-<header class="header">
-    <div class="nav-item">
-        <nav>
-            <span> <img class="logo" src="images/logo.svg"></span>
-            <span> <button class="btn-header"> Try it Free</button></span>
-        </nav>
-    </div>
-<div class="row">
-
-    <div class="col-6">
-        <h1>Learn to Code by <br>Watching Others</h1>
-        <p> See how experienced developer solve problems in real-time. watching scripted tutorials is great. but understanding how developers think is invaluable.</p>
-        <div><button class="outer">Get started for free</button></div>
-    </div>
-
-    <div class="col-3 right">
-        <div class="aside">
-               <img class= "aside-img" src="images/illustration-mockups.svg">
+<section id="hero">
+    <nav class="nav-flex">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <button class="nav-btn">Try It Free</button>
+    </nav>
+    <div class="container">
+        <div class="item">
+            <h1 class="heading">Build The community your fans will love</h1>
+            <p class="sub-heading">
+                Huddle re-imagines the way we build communities. You have a voice,
+                but so does your audience. Create connections with your users as you
+                engage in genuine discussion.
+            </p>
+            <button class="hero-btn">Get Started For Free</button>
+        </div>
+        <div class="item">
+            <img
+                    src="images/illustration-mockups.svg"
+                    alt=""
+                    class="banner-img"
+            />
         </div>
     </div>
-</div>
-</header>
-<section class="container box-shadow row">
-    <div>
-        <div class="col-3">
-            <h2> Grow Together </h2>
-            <p> See how experienced developer solve problems in real-time. watching scripted tutorials is great. but understanding how developers think is invaluable.</p>
+</section>
+
+<section id="middle">
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2 class="flex-head">Grow Together</h2>
+            <p class="flex-sub">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                possimus et distinctio quidem perspiciatis hic. Saepe error ipsam
+                quasi ipsa!
+            </p>
         </div>
-        <div class="col-6 ">
-            <img class="first-img" src="images/illustration-grow-together.svg">
+
+        <div class="flex-item">
+            <img src="images/illustration-grow-together.svg" alt="" />
+        </div>
+    </div>
+
+    <div class="flex-container rev-row">
+        <div class="flex-item">
+            <h2 class="flex-head">Flow Conversations</h2>
+            <p class="flex-sub">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                possimus et distinctio quidem perspiciatis hic. Saepe error ipsam
+                quasi ipsa!
+            </p>
+        </div>
+
+        <div class="flex-item">
+            <img src="images/illustration-flowing-conversation.svg" alt="" />
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2 class="flex-head">Your Users</h2>
+            <p class="flex-sub">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                possimus et distinctio quidem perspiciatis hic. Saepe error ipsam
+                quasi ipsa!
+            </p>
+        </div>
+
+        <div class="flex-item">
+            <img src="images/illustration-your-users.svg" alt="" />
         </div>
     </div>
 </section>
 
 
+<section id="footer">
+    <div class="flex-container lflex">
+        <h1 class="heading">Ready To Build Community?</h1>
+        <button class="hero-btn fbtn">Get Started For Free</button>
+    </div>
 
+    <div class="foot-item lf">
+        <img src="images/logo.svg" alt="logo" class="pclog"/>
+        <span>
+          <i><img src="images/icon-location.svg"/></i> Location Nigeria.</span>
+        <span>
+          <i><img src="images/icon-phone.svg"/></i> +1-543-123-4567</span>
+        <span>
+          <i> <img src="images/icon-email.svg"/></i> example@huddle.com</span>
+    </div>
+
+    <div class="foot-item">
+        <a href="">About Us</a>
+        <a href="">What We Do</a>
+        <a href="">FAQ</a>
+    </div>
+
+    <div class="foot-item">
+        <a href="">Career</a>
+        <a href="">Blog</a>
+        <a href="">Contact Us</a>
+    </div>
+
+    <span class="bloc">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </span>
+    <span class="foot-item">
+        <p class="bottomright">© Copyright 2022 Huddle. All rights reserved.</p>
+      </span>
+</section>
+<script
+        src="https://kit.fontawesome.com/8dd4b16ac7.js"
+        crossorigin="anonymous"
+></script>
 </body>
 </html>
